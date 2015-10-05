@@ -10,13 +10,13 @@
 #import "LSTableViewCell.h"
 
 NSString const * LSTableViewCellIdentifier  =   @"LSTableViewCell";
+NSInteger const LSRowHeight = 217.0f;
 
 @interface LSMainTableView () <UITableViewDataSource,UITableViewDelegate,LSTableViewCellDelegate>
 {
     __weak IBOutlet UITableView *_commonTableView;
     NSMutableArray *_data;
     __weak id<LSMainTableViewDelegate> _delegate;
-
 }
 @end
 
@@ -53,90 +53,21 @@ NSString const * LSTableViewCellIdentifier  =   @"LSTableViewCell";
     return self;
 }
 
+#pragma mark - Helper Methods
+
 - (void)updateView
 {
     [self setBackgroundColor:[UIColor whiteColor]];
      _data = [[NSMutableArray alloc] init];
-    
-      [_commonTableView registerNib:[UINib nibWithNibName:(NSString *)LSTableViewCellIdentifier bundle:[NSBundle mainBundle]] forCellReuseIdentifier:(NSString *)LSTableViewCellIdentifier];
-      _commonTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
- 
-    /*
-    [_commonTableView registerNib:[UINib nibWithNibName:(NSString *)LSTableViewCellIdentifier bundle:[NSBundle mainBundle]] forCellReuseIdentifier:(NSString *)LSTableViewCellIdentifier];
-    
-    
-    //Creating Temporary Data Structure  => DATA
-    
-    _dataArray = @[
-                   
-                   @{ HBSectionDataKey:@[
-                              @{HBProductNameKey:@"1"},
-                              @{HBProductNameKey:@"2"},
-                              @{HBProductNameKey:@"3"},
-                              @{HBProductNameKey:@"4"},
-                              @{HBProductNameKey:@"5"},
-                              @{HBProductNameKey:@"6"},
-                              @{HBProductNameKey:@"7"},
-                              @{HBProductNameKey:@"8"},
-                              @{HBProductNameKey:@"9"},
-                              @{HBProductNameKey:@"10"},
-                              ]},
-                   @{ HBSectionDataKey:@[
-                              @{HBProductNameKey:@"A"},
-                              @{HBProductNameKey:@"B"},
-                              @{HBProductNameKey:@"C"},
-                              @{HBProductNameKey:@"D"},
-                              @{HBProductNameKey:@"E"},
-                              @{HBProductNameKey:@"F"},
-                              @{HBProductNameKey:@"G"},
-                              @{HBProductNameKey:@"H"},
-                              @{HBProductNameKey:@"I"},
-                              @{HBProductNameKey:@"J"},
-                              @{HBProductNameKey:@"K"},
-                              ]},
-                   @{ HBSectionDataKey:@[
-                              @{HBProductNameKey:@"111"},
-                              @{HBProductNameKey:@"222"},
-                              @{HBProductNameKey:@"333"},
-                              @{HBProductNameKey:@"444"},
-                              @{HBProductNameKey:@"555"},
-                              @{HBProductNameKey:@"666"},
-                              @{HBProductNameKey:@"777"},
-                              @{HBProductNameKey:@"888"},
-                              @{HBProductNameKey:@"999"},
-                              @{HBProductNameKey:@"1000"},
-                              ]},
-                   @{ HBSectionDataKey:@[
-                              @{HBProductNameKey:@"ABC"},
-                              @{HBProductNameKey:@"PQR"},
-                              @{HBProductNameKey:@"QWE"},
-                              @{HBProductNameKey:@"FFS"},
-                              @{HBProductNameKey:@"SDG"},
-                              @{HBProductNameKey:@"SDF"},
-                              @{HBProductNameKey:@"RWE"},
-                              @{HBProductNameKey:@"GDS"},
-                              @{HBProductNameKey:@"HSR"},
-                              @{HBProductNameKey:@"UGD"},
-                              @{HBProductNameKey:@"ERY"},
-                              ]},
-                   @{ HBSectionDataKey:@[
-                              @{HBProductNameKey:@"ABC"},
-                              @{HBProductNameKey:@"PQR"},
-                              @{HBProductNameKey:@"QWE"},
-                              @{HBProductNameKey:@"FFS"},
-                              @{HBProductNameKey:@"SDG"},
-                              @{HBProductNameKey:@"SDF"},
-                              @{HBProductNameKey:@"RWE"},
-                              @{HBProductNameKey:@"GDS"},
-                              @{HBProductNameKey:@"HSR"},
-                              @{HBProductNameKey:@"UGD"},
-                              @{HBProductNameKey:@"ERY"},
-                              ]},
-                   ];
-    */
-    
 }
 
+- (void)setupTableView
+{
+    [_commonTableView registerNib:[UINib nibWithNibName:(NSString *)LSTableViewCellIdentifier bundle:[NSBundle mainBundle]] forCellReuseIdentifier:(NSString *)LSTableViewCellIdentifier];
+    _commonTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+#pragma mark - Setter Methods
 
 - (void)setData:(NSMutableArray *)data
 {
@@ -166,7 +97,7 @@ NSString const * LSTableViewCellIdentifier  =   @"LSTableViewCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 216.0f;
+    return LSRowHeight;
 }
 
 #pragma mark - LSTableViewCellDelegate Method

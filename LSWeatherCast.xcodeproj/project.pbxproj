@@ -428,7 +428,6 @@
 			children = (
 				795467101BBD807500DF5231 /* LSCustomizedView */,
 				79FC60701BBD17170084ED39 /* LSAlertView */,
-				79FC60711BBD17170084ED39 /* LSRea */,
 				79FC60721BBD17170084ED39 /* LSWebServiceHelper */,
 			);
 			path = Helpers;
@@ -439,13 +438,6 @@
 			children = (
 			);
 			path = LSAlertView;
-			sourceTree = "<group>";
-		};
-		79FC60711BBD17170084ED39 /* LSRea */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LSRea;
 			sourceTree = "<group>";
 		};
 		79FC60721BBD17170084ED39 /* LSWebServiceHelper */ = {

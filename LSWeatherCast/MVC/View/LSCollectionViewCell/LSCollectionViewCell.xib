@@ -56,7 +56,7 @@
                 <outlet property="_iconLabel" destination="ZuJ-bm-CHx" id="MVE-t5-tu1"/>
                 <outlet property="_titleLabel" destination="ZBj-N0-ig4" id="vuV-Wo-bqZ"/>
             </connections>
-            <point key="canvasLocation" x="254" y="142"/>
+            <point key="canvasLocation" x="225" y="566"/>
         </collectionViewCell>
     </objects>
 </document>

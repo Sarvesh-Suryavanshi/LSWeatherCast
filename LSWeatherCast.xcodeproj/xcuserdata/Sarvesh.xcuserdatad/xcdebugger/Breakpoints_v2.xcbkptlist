@@ -35,22 +35,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LSWeatherCast/MVC/View/LSTableView/LSMainTableView.m"
-            timestampString = "465625174.592625"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-updateView"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LSWeatherCast/MVC/Modal/LSWeatherCollectionVO/LSWeatherCollectionVO.m"
             timestampString = "465586450.478904"
             startingColumnNumber = "9223372036854775807"
