@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="weathericons.ttf">
+            <string>weathericons</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherCast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJd-JO-wDt">
+                                <rect key="frame" x="0.0" y="308" width="600" height="58"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="dkA-ot-Lnu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="0.87415540540000003" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGe-QX-RRR">
+                                <rect key="frame" x="0.0" y="136" width="600" height="164"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="S7n-fI-AAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="weathericons" family="weathericons" pointSize="116"/>
+                                <color key="textColor" white="1" alpha="0.87415540540000003" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.83137254901960778" green="0.10196078431372549" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XGe-QX-RRR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="116" id="2c8-Rc-HPi"/>
+                            <constraint firstAttribute="trailing" secondItem="XGe-QX-RRR" secondAttribute="trailing" id="FEX-CD-uDX"/>
+                            <constraint firstItem="XGe-QX-RRR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="TfG-nH-Hqm"/>
+                            <constraint firstAttribute="trailing" secondItem="VJd-JO-wDt" secondAttribute="trailing" id="Y6j-ce-VMt"/>
+                            <constraint firstItem="VJd-JO-wDt" firstAttribute="top" secondItem="XGe-QX-RRR" secondAttribute="bottom" constant="8" id="ZsZ-fT-LZ0"/>
+                            <constraint firstItem="VJd-JO-wDt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="agc-fW-SkZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>

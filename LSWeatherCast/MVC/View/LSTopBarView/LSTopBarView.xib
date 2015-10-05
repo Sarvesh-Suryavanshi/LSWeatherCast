@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="lsicons.ttf">
+            <string>lsicons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSTopBarView">
+            <connections>
+                <outlet property="_doneButton" destination="cV3-Z0-78p" id="Sxd-0s-WmL"/>
+                <outlet property="_leftButton" destination="b2C-fN-uOK" id="hiE-gW-zOs"/>
+                <outlet property="_titleLabel" destination="bC4-F9-frd" id="Aco-jB-9p7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC4-F9-frd">
+                    <rect key="frame" x="281" y="10" width="38" height="24"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="0.87415540540000003" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-fN-uOK">
+                    <rect key="frame" x="10" y="0.0" width="30" height="44"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="lsicons" family="lsicons" pointSize="26"/>
+                    <state key="normal" title="b">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="chD-4R-Icz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV3-Z0-78p">
+                    <rect key="frame" x="551" y="0.0" width="39" height="44"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="0.87415540540540537" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="GWK-N7-Jc5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b2C-fN-uOK" secondAttribute="bottom" id="BXf-3j-eNE"/>
+                <constraint firstItem="bC4-F9-frd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K4D-id-mai"/>
+                <constraint firstItem="cV3-Z0-78p" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Q6J-SV-RKr"/>
+                <constraint firstAttribute="trailing" secondItem="cV3-Z0-78p" secondAttribute="trailing" constant="10" id="RCB-wC-Apq"/>
+                <constraint firstItem="b2C-fN-uOK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="fr4-Rn-HIY"/>
+                <constraint firstItem="b2C-fN-uOK" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="kcF-3a-Ah2"/>
+                <constraint firstAttribute="bottom" secondItem="cV3-Z0-78p" secondAttribute="bottom" id="lA8-se-mNl"/>
+                <constraint firstItem="b2C-fN-uOK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n8W-jz-6aY"/>
+                <constraint firstItem="bC4-F9-frd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uuz-mg-RGZ"/>
+                <constraint firstItem="cV3-Z0-78p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zPV-9K-5S3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

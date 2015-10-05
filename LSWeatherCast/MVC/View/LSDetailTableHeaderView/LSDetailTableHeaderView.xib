@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LSDetailTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-ha-euc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <animations/>
+                </mapView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OYa-ha-euc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0gV-bz-oIK"/>
+                <constraint firstItem="OYa-ha-euc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gix-n9-m4D"/>
+                <constraint firstAttribute="trailing" secondItem="OYa-ha-euc" secondAttribute="trailing" id="Oyd-dI-W7O"/>
+                <constraint firstAttribute="bottom" secondItem="OYa-ha-euc" secondAttribute="bottom" id="cbm-Ft-s8e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_mapView" destination="OYa-ha-euc" id="SgZ-5n-RZy"/>
+            </connections>
+        </view>
+    </objects>
+</document>
