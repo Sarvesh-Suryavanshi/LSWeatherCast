@@ -59,6 +59,7 @@ NSInteger const LSRowHeight = 217.0f;
 {
     [self setBackgroundColor:[UIColor whiteColor]];
      _data = [[NSMutableArray alloc] init];
+    [self setupTableView];
 }
 
 - (void)setupTableView
