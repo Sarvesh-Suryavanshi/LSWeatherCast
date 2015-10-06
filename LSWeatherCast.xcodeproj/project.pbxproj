@@ -26,7 +26,6 @@
 		7990E49C1BBE7DF000963A9E /* LSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7990E4961BBE7DF000963A9E /* LSTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		7990E4A01BBE7F4A00963A9E /* LSSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7990E49E1BBE7F4A00963A9E /* LSSelectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		7990E4A11BBE7F4A00963A9E /* LSSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7990E49F1BBE7F4A00963A9E /* LSSelectionTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		7990E4A31BBE97D100963A9E /* API and Response.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7990E4A21BBE97D100963A9E /* API and Response.rtf */; settings = {ASSET_TAGS = (); }; };
 		7990E4B51BBEA5A600963A9E /* LSWeatherVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7990E4B41BBEA5A600963A9E /* LSWeatherVO.m */; settings = {ASSET_TAGS = (); }; };
 		7990E4B81BBEA5C100963A9E /* LSWeatherCollectionVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7990E4B71BBEA5C100963A9E /* LSWeatherCollectionVO.m */; settings = {ASSET_TAGS = (); }; };
 		7990E4BB1BBEAFD900963A9E /* LSWebServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7990E4BA1BBEAFD900963A9E /* LSWebServiceHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -38,7 +37,6 @@
 		79A901421BC2228A0069345F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A901411BC2228A0069345F /* MapKit.framework */; };
 		79C5102D1BBBD2450091FC1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C5102C1BBBD2450091FC1B /* main.m */; };
 		79C510301BBBD2450091FC1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C5102F1BBBD2450091FC1B /* AppDelegate.m */; };
-		79C510331BBBD2450091FC1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C510321BBBD2450091FC1B /* ViewController.m */; };
 		79C510361BBBD2450091FC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C510341BBBD2450091FC1B /* Main.storyboard */; };
 		79C510391BBBD2450091FC1B /* LSWeatherCast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79C510371BBBD2450091FC1B /* LSWeatherCast.xcdatamodeld */; };
 		79C5103B1BBBD2450091FC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C5103A1BBBD2450091FC1B /* Assets.xcassets */; };
@@ -96,7 +94,6 @@
 		7990E49D1BBE7F4A00963A9E /* LSSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSelectionTableViewCell.h; sourceTree = "<group>"; };
 		7990E49E1BBE7F4A00963A9E /* LSSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSelectionTableViewCell.m; sourceTree = "<group>"; };
 		7990E49F1BBE7F4A00963A9E /* LSSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSSelectionTableViewCell.xib; sourceTree = "<group>"; };
-		7990E4A21BBE97D100963A9E /* API and Response.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "API and Response.rtf"; sourceTree = "<group>"; };
 		7990E4B31BBEA5A600963A9E /* LSWeatherVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWeatherVO.h; sourceTree = "<group>"; };
 		7990E4B41BBEA5A600963A9E /* LSWeatherVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSWeatherVO.m; sourceTree = "<group>"; };
 		7990E4B61BBEA5C100963A9E /* LSWeatherCollectionVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWeatherCollectionVO.h; sourceTree = "<group>"; };
@@ -115,8 +112,6 @@
 		79C5102C1BBBD2450091FC1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79C5102E1BBBD2450091FC1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79C5102F1BBBD2450091FC1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		79C510311BBBD2450091FC1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		79C510321BBBD2450091FC1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		79C510351BBBD2450091FC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C510381BBBD2450091FC1B /* LSWeatherCast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LSWeatherCast.xcdatamodel; sourceTree = "<group>"; };
 		79C5103A1BBBD2450091FC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -303,8 +298,6 @@
 		79C5101F1BBBD2440091FC1B = {
 			isa = PBXGroup;
 			children = (
-				79A901411BC2228A0069345F /* MapKit.framework */,
-				79A9013F1BC222850069345F /* CoreLocation.framework */,
 				79C5102A1BBBD2450091FC1B /* LSWeatherCast */,
 				79C510471BBBD2450091FC1B /* LSWeatherCastTests */,
 				79C510521BBBD2450091FC1B /* LSWeatherCastUITests */,
@@ -332,15 +325,12 @@
 				79C510611BBBD2930091FC1B /* MVC */,
 				79C5102E1BBBD2450091FC1B /* AppDelegate.h */,
 				79C5102F1BBBD2450091FC1B /* AppDelegate.m */,
-				79C510311BBBD2450091FC1B /* ViewController.h */,
-				79C510321BBBD2450091FC1B /* ViewController.m */,
 				79C510341BBBD2450091FC1B /* Main.storyboard */,
 				79C5103A1BBBD2450091FC1B /* Assets.xcassets */,
 				79C5103C1BBBD2450091FC1B /* LaunchScreen.storyboard */,
 				79C5103F1BBBD2450091FC1B /* Info.plist */,
 				79C510371BBBD2450091FC1B /* LSWeatherCast.xcdatamodeld */,
 				79C5102B1BBBD2450091FC1B /* Supporting Files */,
-				7990E4A21BBE97D100963A9E /* API and Response.rtf */,
 			);
 			path = LSWeatherCast;
 			sourceTree = "<group>";
@@ -349,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				79C5102C1BBBD2450091FC1B /* main.m */,
+				79A901411BC2228A0069345F /* MapKit.framework */,
+				79A9013F1BC222850069345F /* CoreLocation.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -601,7 +593,6 @@
 				79C510361BBBD2450091FC1B /* Main.storyboard in Resources */,
 				7990E49A1BBE7DF000963A9E /* LSMainTableView.xib in Resources */,
 				7990E4A11BBE7F4A00963A9E /* LSSelectionTableViewCell.xib in Resources */,
-				7990E4A31BBE97D100963A9E /* API and Response.rtf in Resources */,
 				7954671B1BBD85CA00DF5231 /* LSTopBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,7 +624,6 @@
 				7990E49B1BBE7DF000963A9E /* LSTableViewCell.m in Sources */,
 				7990E4BB1BBEAFD900963A9E /* LSWebServiceHelper.m in Sources */,
 				79A9013C1BC221C30069345F /* LSDetailTableHeaderView.m in Sources */,
-				79C510331BBBD2450091FC1B /* ViewController.m in Sources */,
 				798F87B71BC0DFE800BE0C7F /* LSDetailVC.m in Sources */,
 				7990E4971BBE7DF000963A9E /* LSCollectionViewCell.m in Sources */,
 				799F272F1BC1814700C00432 /* LSDetailViewCell.m in Sources */,
